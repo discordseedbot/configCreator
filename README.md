@@ -1,2 +1,2 @@
 # configCreator
- A Tool that is easy to generate configuration files and prefrences for the latest SeedBot version.
+Web-based tool for creating the configuration files (`config.json` and `prefrences.json`) that are required to make SeedBot run.
