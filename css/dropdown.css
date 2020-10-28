@@ -32,3 +32,9 @@
 .section.container .dropdown.content *{
 	margin: 5px;
 }
+.section.container>div.dropdown.content{
+	display:none;
+}
+.section.container.startOpen>div.dropdown.content{
+	display:block;
+}
