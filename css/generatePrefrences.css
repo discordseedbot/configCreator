@@ -1,0 +1,25 @@
+/*
+
+div.generatePrefrences.dropdown.content element{
+
+}
+
+*/
+
+div.generatePrefrences.dropdown.content label{
+	min-width: 150px;
+	display:inline-block;
+}
+div.generatePrefrences.dropdown.content label.noMWidth{
+	min-width: 1px;
+}
+div.generatePrefrences.dropdown.content .wide{
+	width: 400px;
+}
+div.generatePrefrences.dropdown.content button#genPref_generate{
+	margin-top:25px;
+	margin-bottom:25px;
+	width: 150px;
+	height: 26px;
+	margin-left: calc(50% - 80px);
+}

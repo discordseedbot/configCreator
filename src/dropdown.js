@@ -2,7 +2,7 @@ import $ from "jquery";
 
 $(document).on("click",".section.container .dropdown.clickable",(e)=>{
 	var me = e.target.parentNode;
-	var section = "";
+	var section = null;
 	me.classList.forEach((cI)=>{
 		switch(cI){
 			case "dropdown":

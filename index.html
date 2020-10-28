@@ -6,7 +6,166 @@
 	</head>
 	<body>
 		<div class="globalContainer">
-			<div class="debugInfo section container startOpen">
+			<div class="generatePrefrences section container">
+				<div class="generatePrefrences dropdown clickable">
+					<h3>Generate Prefrences</h3>
+				</div>
+				<div class="generatePrefrences dropdown content">
+					<ul>
+						<li>Prefix
+							<ul>
+								<li>
+									<label for="genPref_prefix-default">Default</label>
+									<input type="textbox" id="genPref_prefix-default" placeholder="s!" ></li>
+								<li>
+									<label for="genPref_prefix-dev">Developer</label>
+									<input type="textbox" id="genPref_prefix-dev" placeholder="s~" ></li>
+								<li>
+									<label for="genPref_prefix-music">Music</label>
+									<input type="textbox" id="genPref_prefix-music" placeholder="s?" ></li>
+								<li>
+									<label for="genPref_prefix-math">Math</label>
+									<input type="textbox" id="genPref_prefix-math" placeholder="s!math" ></li>
+								<li>
+									<label for="genPref_prefix-dmoj">DMOJ</label>
+									<input type="textbox" id="genPref_prefix-dmoj" placeholder="s!dmoj" ></li>
+								<li>
+									<label for="genPref_prefix-youtube">Youtube</label>
+									<input type="textbox" id="genPref_prefix-youtube" placeholder="s!yt" ></li>
+							</ul>
+						</li>
+						<li>Developer Notifications
+							<ul>
+								<li><input type="checkbox" id="genPref_devNotif-enable" checked>
+									<label for="genPref_devNotif-enable">Enable</label></li>
+								<li>Developer
+									<ul>
+										<li>
+											<label for="genPref_devNotif-dev-err">Error</label>
+											<input type="textbox" id="genPref_devNotif-dev-err" placeholder="ChannelID">
+										</li>
+										<li>
+											<label for="genPref_devNotif-dev-notif">Notifications</label>
+											<input type="textbox" id="genPref_devNotif-dev-notif" placeholder="ChannelID">
+										</li>
+										<li><label for="genPref_devNotif-dev-unauth">Unauthorized Access</label>
+											<input type="textbox" id="genPref_devNotif-dev-unauth" placeholder="ChannelID">
+										</li>
+									</ul>
+								</li>
+								<li>Userspace
+									<ul>
+										<li>
+											<label for="genPref_devNotif-usr-err">Error</label>
+											<input type="textbox" id="genPref_devNotif-usr-err" placeholder="ChannelID">
+										</li>
+										<li>
+											<label for="genPref_devNotif-usr-notif">Notifications</label>
+											<input type="textbox" id="genPref_devNotif-usr-notif" placeholder="ChannelID">
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>API
+							<ul>
+								<li><input type="checkbox" id="genPref_api-enable">
+									<label for="genPref_api-enable">Enable</label></li>
+								<li>Network
+									<ul>
+										<li>Protocol
+											<ul>
+												<li>
+													<label for="genPref_api-type" class="noMWidth">Type</label>
+													<select id="genPref_api-type">
+														<option value="https">HTTPS</option>
+														<option value="http">HTTP</option>
+													</select>
+												</li>
+												<li>Client
+													<ul>
+														<li>
+															<label for="genPref_api-version" class="noMWidth">Version</label>
+															<select id="genPref_api-version">
+																<option value="4">v4 (Latest)</option>
+															</select>
+														</li>
+														<li>
+															<label for="genPref_api-schema" class="noMWidth">Schema Revision</label>
+															<select id="genPref_api-schema">
+																<option value="2">v2 (Latest)</option>
+															</select>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<label for="genPref_api-address">Address</label>
+											<input class="wide" type="textbox" id="genPref_api-address" placeholder="e.g api.seedbot.xyz">
+										</li>
+										<li>
+											<label for="genPref_api-port">Port</label>
+											<input class="wide" type="number" id="genPref_api-port" placeholder="default | auto (default) | autodetect | [port]">
+										</li>
+									</ul>
+								</li>
+								<li>
+									<label for="genPref_api-timeout">Timeout (seconds)</label>
+									<input type="textbox" id="genPref_api-timeout" placeholder="900">
+								</li>
+							</ul>
+						</li>
+						<li>Core
+							<ul>
+								<li>Statistics
+									<ul>
+										<li>
+											<label for="genPref_core_stats-timer">Timer (seconds)</label>
+											<input type="number" id="genPref_core_stats-timer" placeholder="600">
+										</li>
+										<li>
+											<label for="genPref_core_stats-loginRetry">Login Retry Timer (seconds)</label>
+											<input type="number" id="genPref_core_stats-loginRetry" placeholder="1">
+										</li>
+									</ul>
+								</li>
+								<li>Token Manager
+									<ul>
+										<li>
+											<input type="checkbox" id="genPref_core_tokenMan-envToken">
+											<label for="genPref_core_tokenMan-envToken" class="noMWidth">Enviroment Variable Tokens</label>
+										</li>
+										<li>
+											<label for="genPref_core_tokenMan-location">Token Location</label>
+											<input  class="wide" type="textbox" id="genPref_core_tokenMan-location" placeholder="root (default) | aboveRoot | [location]">
+										</li>
+									</ul>
+								</li>
+								<li>Localization
+									<ul>
+										<li>
+											<label for="genPref_core_local-name">Name</label>
+											<input type="textbox" id="genPref_core_local-name" placeholder="SeedBot">
+										</li>
+										<li>
+											<label for="genPref_core_local-web">Website</label>
+											<input type="textbox" id="genPref_core_local-web" placeholder="https://seedbot.xyz">
+										</li>
+										<li>
+											<label for="genPref_core_local-contact">Contact</label>
+											<input type="textbox" id="genPref_core_local-contact" placeholder="contact@dariox.club">
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<hr>
+					<button id="genPref_generate" class="generatePrefrences">Generate JSON</button>
+				</div>
+			</div>
+			<div class="debugInfo section container">
 				<div class="debugInfo dropdown clickable">
 					<h3>Debug Info</h3>
 				</div>
