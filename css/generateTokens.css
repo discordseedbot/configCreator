@@ -1,0 +1,25 @@
+/*
+
+div.generateTokens.dropdown.content element{
+
+}
+
+*/
+
+div.generateTokens.dropdown.content label{
+	min-width: 150px;
+	display:inline-block;
+}
+div.generateTokens.dropdown.content label.noMWidth{
+	min-width: 1px;
+}
+div.generateTokens.dropdown.content .wide{
+	width: 400px;
+}
+div.generateTokens.dropdown.content button#genTokens_generate{
+	margin-top:25px;
+	margin-bottom:25px;
+	width: 150px;
+	height: 26px;
+	margin-left: calc(50% - 80px);
+}

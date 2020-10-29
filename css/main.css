@@ -1,5 +1,7 @@
 @import "./dropdown.css";
 @import "./generatePrefrences.css";
+@import "./generateTokens.css";
+@import "./toolBar.css";
 
 /**{
 	border: 1px solid black;
